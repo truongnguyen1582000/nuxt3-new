@@ -17,7 +17,11 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@formkit/nuxt",
     "@vueuse/nuxt",
+    '@nuxt/image',
   ],
+  image: {
+    dir: 'assets/images'
+  },
   i18n: {
     lazy: true,
     langDir: "locales",
@@ -47,8 +51,8 @@ export default defineNuxtConfig({
   },
   css: [
     "~/assets/scss/main.scss",
-    "~/assets/css/tailwind.css",
     "~/assets/css/theme.css",
+    "~/assets/css/tailwind.css",
   ],
   postcss: {
     plugins: {
