@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-import AdvertiseBox from '@/components/AdvertiseBox.vue'
 </script>
 
 <template>
@@ -10,13 +9,17 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <NuxtImg src="/omnibus_logo.svg" alt="omnibus_logo" width="198px" />
 
       <div class="auth-action mt-16">
-        <button class="login w-[388px] text-neutral-light px-4 py-2 rounded-lg bg-[#4DA2FF] flex justify-center mb-3">
-          Login
-        </button>
+        <NuxtLink to="/auth/login">
+          <button class="login w-[388px] text-neutral-light px-4 py-2 rounded-lg bg-[#4DA2FF] flex justify-center mb-3">
+            Login
+          </button>
+        </NuxtLink>
 
-        <button class="signup w-[388px] text-neutral-light px-4 py-2 rounded-lg bg-[#4DA2FF] flex justify-center">
-          Sign up
-        </button>
+        <NuxtLink to="/auth/sign-up">
+          <button class="signup w-[388px] text-neutral-light px-4 py-2 rounded-lg bg-[#4DA2FF] flex justify-center">
+            Sign up
+          </button>
+        </NuxtLink>
       </div>
     </div>
   </div>
