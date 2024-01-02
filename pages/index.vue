@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+
 </script>
 
 <template>
@@ -6,7 +7,7 @@
     <div class="flex flex-col items-center">
       <h1 class="text-5xl font-semibold">B3santePro.services</h1>
       <p class="text-2xl mb-8">B3santePro’s services platform for your studies with HCPs</p>
-      <NuxtImg src="/omnibus_logo.svg" alt="omnibus_logo" width="198px" />
+      <NuxtImg src="/omnibus-logo.svg" alt="omnibus-logo" width="198" />
 
       <div class="auth-action mt-16">
         <NuxtLink to="/auth/login">
