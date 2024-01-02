@@ -15,10 +15,19 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
     "@pinia/nuxt",
-    "@formkit/nuxt",
     "@vueuse/nuxt",
     '@nuxt/image',
+    '@vee-validate/nuxt',
   ],
+  veeValidate: {
+    autoImports: true,
+    componentNames: {
+      Form: 'VeeForm',
+      Field: 'VeeField',
+      FieldArray: 'VeeFieldArray',
+      ErrorMessage: 'VeeErrorMessage',
+    },
+  },
   image: {
     dir: 'assets/images'
   },
@@ -60,6 +69,6 @@ export default defineNuxtConfig({
     },
   },
   build: {
-    transpile: ["nuxt", "primevue", "formkit-primevue"],
+    transpile: ["nuxt", "primevue"],
   },
 });
